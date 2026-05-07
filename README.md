@@ -22,7 +22,7 @@ Restart Gemini CLI to pick up the installed plugin.
 ## What's Included
 
 - **Skills**: babysit
-- **Hooks**: SessionStart, PreToolUse, PostToolUse, AfterAgent
+- **Hooks**: SessionStart, UserPromptSubmit, PreToolUse, PostToolUse, PreCompact, AfterAgent, SessionEnd, SessionIdle, ShellEnv
 - **Commands**: (directory)
 
 - **CLI**: Install/uninstall scripts for global and workspace setup
