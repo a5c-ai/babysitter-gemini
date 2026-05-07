@@ -1,12 +1,14 @@
 {
   "name": "babysitter",
-  "version": "5.0.1-staging.8109dc0fbcf8",
+  "version": "5.0.1-staging.5311eef77202",
   "description": "Orchestrate complex, multi-step workflows with event-sourced state management, hook-based extensibility, and human-in-the-loop approval",
   "author": "a5c.ai",
   "license": "MIT",
   "harness": "gemini-cli",
   "hooks": {
     "SessionStart": "hooks/babysitter-proxied-session-start.sh",
+    "PreToolUse": "hooks/babysitter-proxied-pre-prompt.sh",
+    "PostToolUse": "hooks/babysitter-proxied-post-response.sh",
     "AfterAgent": "hooks/babysitter-proxied-after-agent.sh"
   },
   "commands": [
@@ -43,6 +45,6 @@
     "quality-convergence",
     "agent",
     "LLM",
-    "gemini"
+    "gemini-cli"
   ]
 }
