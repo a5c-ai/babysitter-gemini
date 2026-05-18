@@ -7,7 +7,7 @@
           {
             "name": "babysitter-session-start",
             "type": "command",
-            "command": "npx -y -p @a5c-ai/hooks-mux-cli -c \"a5c-hooks-mux invoke --adapter gemini --handler 'bash ${GEMINI_EXTENSION_PATH}/hooks/babysitter-proxied-session-start.sh' --json\"",
+            "command": "a5c-hooks-mux invoke --adapter gemini --handler \"bash ${GEMINI_EXTENSION_PATH}/hooks/babysitter-proxied-session-start.sh\" --json",
             "timeout": 30000,
             "description": "babysitter SessionStart hook"
           }
@@ -20,7 +20,7 @@
           {
             "name": "babysitter-user-prompt-submit",
             "type": "command",
-            "command": "npx -y -p @a5c-ai/hooks-mux-cli -c \"a5c-hooks-mux invoke --adapter gemini --handler 'bash ${GEMINI_EXTENSION_PATH}/hooks/babysitter-proxied-user-prompt-submit.sh' --json\"",
+            "command": "a5c-hooks-mux invoke --adapter gemini --handler \"bash ${GEMINI_EXTENSION_PATH}/hooks/babysitter-proxied-user-prompt-submit.sh\" --json",
             "timeout": 30000,
             "description": "babysitter UserPromptSubmit hook"
           }
@@ -33,7 +33,7 @@
           {
             "name": "babysitter-pre-tool-use",
             "type": "command",
-            "command": "npx -y -p @a5c-ai/hooks-mux-cli -c \"a5c-hooks-mux invoke --adapter gemini --handler 'bash ${GEMINI_EXTENSION_PATH}/hooks/babysitter-proxied-before-tool.sh' --json\"",
+            "command": "a5c-hooks-mux invoke --adapter gemini --handler \"bash ${GEMINI_EXTENSION_PATH}/hooks/babysitter-proxied-before-tool.sh\" --json",
             "timeout": 30000,
             "description": "babysitter PreToolUse hook"
           }
@@ -46,7 +46,7 @@
           {
             "name": "babysitter-post-tool-use",
             "type": "command",
-            "command": "npx -y -p @a5c-ai/hooks-mux-cli -c \"a5c-hooks-mux invoke --adapter gemini --handler 'bash ${GEMINI_EXTENSION_PATH}/hooks/babysitter-proxied-after-tool.sh' --json\"",
+            "command": "a5c-hooks-mux invoke --adapter gemini --handler \"bash ${GEMINI_EXTENSION_PATH}/hooks/babysitter-proxied-after-tool.sh\" --json",
             "timeout": 30000,
             "description": "babysitter PostToolUse hook"
           }
@@ -59,7 +59,7 @@
           {
             "name": "babysitter-pre-compact",
             "type": "command",
-            "command": "npx -y -p @a5c-ai/hooks-mux-cli -c \"a5c-hooks-mux invoke --adapter gemini --handler 'bash ${GEMINI_EXTENSION_PATH}/hooks/babysitter-proxied-pre-compact.sh' --json\"",
+            "command": "a5c-hooks-mux invoke --adapter gemini --handler \"bash ${GEMINI_EXTENSION_PATH}/hooks/babysitter-proxied-pre-compact.sh\" --json",
             "timeout": 30000,
             "description": "babysitter PreCompact hook"
           }
@@ -72,7 +72,7 @@
           {
             "name": "babysitter-after-agent",
             "type": "command",
-            "command": "npx -y -p @a5c-ai/hooks-mux-cli -c \"a5c-hooks-mux invoke --adapter gemini --handler 'bash ${GEMINI_EXTENSION_PATH}/hooks/babysitter-proxied-after-agent.sh' --json\"",
+            "command": "a5c-hooks-mux invoke --adapter gemini --handler \"bash ${GEMINI_EXTENSION_PATH}/hooks/babysitter-proxied-after-agent.sh\" --json",
             "timeout": 30000,
             "description": "babysitter AfterAgent hook"
           }
@@ -85,7 +85,7 @@
           {
             "name": "babysitter-session-end",
             "type": "command",
-            "command": "npx -y -p @a5c-ai/hooks-mux-cli -c \"a5c-hooks-mux invoke --adapter gemini --handler 'bash ${GEMINI_EXTENSION_PATH}/hooks/babysitter-proxied-session-end.sh' --json\"",
+            "command": "a5c-hooks-mux invoke --adapter gemini --handler \"bash ${GEMINI_EXTENSION_PATH}/hooks/babysitter-proxied-session-end.sh\" --json",
             "timeout": 30000,
             "description": "babysitter SessionEnd hook"
           }
@@ -98,7 +98,7 @@
           {
             "name": "babysitter-session-idle",
             "type": "command",
-            "command": "npx -y -p @a5c-ai/hooks-mux-cli -c \"a5c-hooks-mux invoke --adapter gemini --handler 'bash ${GEMINI_EXTENSION_PATH}/hooks/babysitter-proxied-session-idle.sh' --json\"",
+            "command": "a5c-hooks-mux invoke --adapter gemini --handler \"bash ${GEMINI_EXTENSION_PATH}/hooks/babysitter-proxied-session-idle.sh\" --json",
             "timeout": 30000,
             "description": "babysitter SessionIdle hook"
           }
@@ -111,7 +111,7 @@
           {
             "name": "babysitter-shell-env",
             "type": "command",
-            "command": "npx -y -p @a5c-ai/hooks-mux-cli -c \"a5c-hooks-mux invoke --adapter gemini --handler 'bash ${GEMINI_EXTENSION_PATH}/hooks/babysitter-proxied-shell-env.sh' --json\"",
+            "command": "a5c-hooks-mux invoke --adapter gemini --handler \"bash ${GEMINI_EXTENSION_PATH}/hooks/babysitter-proxied-shell-env.sh\" --json",
             "timeout": 30000,
             "description": "babysitter ShellEnv hook"
           }
