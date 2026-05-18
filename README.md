@@ -4,10 +4,10 @@ Orchestrate complex, multi-step workflows with event-sourced state management, h
 
 ## Prerequisites
 
-Install the Babysitter SDK CLI:
+Install the Babysitter CLI once. The `babysitter` command is backed by the SDK and exposes the canonical harness/plugin installer used in tests:
 
 ```bash
-npm install -g @a5c-ai/babysitter-sdk
+npm install -g @a5c-ai/babysitter
 ```
 
 ## Installation — Gemini CLI
@@ -18,6 +18,13 @@ babysitter-gemini-cli install --global
 ```
 
 Restart Gemini CLI to pick up the installed plugin.
+
+For scriptable installs, prefer the SDK helper shape:
+
+```bash
+babysitter harness:install-plugin <harness>
+babysitter harness:install-plugin <harness> --workspace /path/to/repo
+```
 
 ## What's Included
 
