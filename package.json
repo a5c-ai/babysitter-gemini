@@ -1,6 +1,6 @@
 {
   "name": "@a5c-ai/babysitter-gemini-cli",
-  "version": "5.0.1-staging.70c61e4c7b4d",
+  "version": "5.0.1-staging.3edc9d7b8d6f",
   "description": "Orchestrate complex, multi-step workflows with event-sourced state management, hook-based extensibility, and human-in-the-loop approval",
   "scripts": {
     "deploy": "npm publish --access public",
@@ -34,7 +34,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@a5c-ai/babysitter-sdk": "5.0.1-staging.70c61e4c7b4d"
+    "@a5c-ai/babysitter-sdk": "5.0.1-staging.3edc9d7b8d6f"
   },
   "repository": {
     "type": "git",
