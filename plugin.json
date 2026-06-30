@@ -1,17 +1,26 @@
 {
   "name": "babysitter",
-  "version": "5.0.1-staging.dfac8e4a",
+  "version": "6.0.0",
   "description": "Orchestrate complex, multi-step workflows with event-sourced state management, hook-based extensibility, and human-in-the-loop approval",
   "author": "a5c.ai",
   "license": "MIT",
   "harness": "gemini-cli",
   "hooks": {
     "SessionStart": "hooks/babysitter-proxied-session-start.sh",
-    "AfterAgent": "hooks/babysitter-proxied-after-agent.sh"
+    "UserPromptSubmit": "hooks/babysitter-proxied-user-prompt-submit.sh",
+    "PreToolUse": "hooks/babysitter-proxied-before-tool.sh",
+    "PostToolUse": "hooks/babysitter-proxied-after-tool.sh",
+    "PreCompact": "hooks/babysitter-proxied-pre-compact.sh",
+    "AfterAgent": "hooks/babysitter-proxied-after-agent.sh",
+    "SessionEnd": "hooks/babysitter-proxied-session-end.sh",
+    "SessionIdle": "hooks/babysitter-proxied-session-idle.sh",
+    "ShellEnv": "hooks/babysitter-proxied-shell-env.sh"
   },
   "commands": [
     "commands/assimilate.toml",
+    "commands/blueprints.toml",
     "commands/call.toml",
+    "commands/check-forbidden-markers.toml",
     "commands/cleanup.toml",
     "commands/contrib.toml",
     "commands/doctor.toml",
@@ -43,6 +52,6 @@
     "quality-convergence",
     "agent",
     "LLM",
-    "gemini"
+    "gemini-cli"
   ]
 }
